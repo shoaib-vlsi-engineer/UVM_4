@@ -1,5 +1,4 @@
 # UVM_4
-UVM_4 — Creating a Write Agent
 This work builds a UVM write agent and integrates it into a class-based environment, then runs a random-write sequence to observe driver prints and phase flow in VCS. The driver gets items and prints them; the agent fetches config from the config DB, conditionally creates driver/sequencer when active, and connects their TLM ports; the env creates the agent; the test configures the agent active, builds the env, raises objections, and starts a random sequence on the agent’s sequencer. The package includes all sources and top calls run_test("ram_random_test"); simulation shows 10 transactions printed and completes at 0 ps (no DUT/clock).
 
 # Key Learnings –
